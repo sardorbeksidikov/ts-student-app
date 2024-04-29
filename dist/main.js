@@ -23,7 +23,7 @@ const search = document.getElementById("search");
 const studentsList = document.getElementById("students-list");
 const btnAddStudent = document.getElementById("btn-add-student");
 const btnEditStudent = document.getElementById("btn-edit-student");
-const students = JSON.parse(localStorage.getItem("students")) || [];
+let students = JSON.parse(localStorage.getItem('students'), '[]');
 displayStudents(students);
 // DISPLAY STUDENTS
 function displayStudents(students) {

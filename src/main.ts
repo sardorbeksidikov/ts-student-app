@@ -46,7 +46,7 @@ const btnEditStudent = document.getElementById(
   "btn-edit-student"
 ) as HTMLButtonElement;
 
-const students: Student[] = JSON.parse(localStorage.getItem("students")) || [];
+let students: Student[] = JSON.parse(localStorage.getItem('students'), '[]')
 
 displayStudents(students);
 
